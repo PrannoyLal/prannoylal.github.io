@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #F6F8FF;
+    color: #364156;
+}
+
+a:link {
+    color: #364156;
+}
+
+a:visited {
+    color: #364156;
+}
+
+a:hover {
+    color: #5073b8;
+}
+
+a:active {
+    color: #364156;
+}
+
+/* Container system */
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: auto;
+    margin: 0.1em;
+}
+
+.iconrow {
+    width: 50;
+    margin: 0.1em; 
+}
+
+.item {
+    margin: 3px 8px;
+}
+
+.icon:before {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+    padding: .2em;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-twitter:before {
+    content: '\f099';
+    color: #364156;
+}
+
+.icon-github:before {
+    content: '\f09b';
+    color: #364156;
+}
+
+.icon-linkedin:before {
+    content: '\f0e1';
+    color: #364156;
+}
+
+.icon-mail:before {
+    content: '\e800';
+    color: #364156;
+}
+
+#social > .item {
+    text-align: center;
+    -webkit-animation: fadein 2s;
+    background-color: #F6F8FF;
+    border: 2px solid #364156;
+    padding: 10px;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    transition-property: border-color;
+}
+    #social > .item:nth-of-type(1):hover {
+        border-color: #F6F8FF;
+    }
+
+    #social > .item:nth-of-type(2):hover {
+        border-color: #F6F8FF;
+    }
+    #social > .item:nth-of-type(3):hover {
+        border-color: #F6F8FF;
+    }
+
+#picture img {
+    background: #364156;
+    padding: 2px;
+    -webkit-animation: fadein 2s;
+    width: 280px;
+    height: 210px;
+    -webkit-transform: rotate(90deg);
+}
+
+#biography {
+    -webkit-animation: fadein 2s;
+    max-width: 450px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 0 0 450px #ffffff inset;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#particles, #vignette {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+
+#vignette {
+    box-shadow: 0 0 800px #F6F8FF inset;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-flow: column-reverse;
+    }
+
+    #picture {
+        order: 1;
+    }
+
+    #social {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #biography {
+        text-align: center;
+    }
+}
