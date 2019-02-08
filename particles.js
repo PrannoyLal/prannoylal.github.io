@@ -55,7 +55,6 @@ var Particle = function(position) {
         fill(this.color[0], this.color[1], this.color[2]);
         ellipse(this.position.x, this.position.y, 2, 2);
 
-        // Only allow mouse input on desktop
         if (mobileDevice)
             return;
 
@@ -76,7 +75,6 @@ function setup() {
     for (var i = 0; i < width / 15; i++)
         particles.push(new Particle(createVector(random(width), random(height))));
 
-    // Don't allow spawning particles on mobile devices
     if (!mobileDevice) {
         window.onclick = function() {
             particles.push(new Particle(createVector(mouseX, mouseY)));
