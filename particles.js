@@ -5,7 +5,7 @@ var Particle = function(position) {
     this.acceleration = createVector(0, 0.05);
     this.velocity = createVector(random(-0.3, 0.3), random(-0.3, 0.3));
     this.position = position.copy();
-    this.color = [0, 0, 128];
+    this.color = [0, 0, 0];
 
     Particle.prototype.run = function() {
         this.update();
