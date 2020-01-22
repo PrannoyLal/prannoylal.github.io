@@ -132,7 +132,7 @@ a:active {
 }
 
 #vignette {
-    box-shadow: 0 0 800px #F6F8FF inset;
+    box-shadow: 0 0 800px #000000 inset;
     z-index: -1;
 }
 
