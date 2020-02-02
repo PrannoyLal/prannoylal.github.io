@@ -95,6 +95,7 @@ a:active {
     overflow: hidden;
     transition-duration: 0.4s;
     transition-property: border-color;
+    border-radius: 10px;
 }
     #social > .item:hover {
         border-color: #F6F8FF;
@@ -107,14 +108,15 @@ a:active {
     width: 280px;
     height: 210px;
     -webkit-transform: rotate(90deg);
+    border-radius: 10px;
 }
 
 #biography {
     -webkit-animation: fadein 2s;
     max-width: 450px;
     padding: 20px;
-    background-color: rgb(255, 255, 255, 0.2);
-    box-shadow: 0 0 450px #ffffff inset;
+    background-color: #F6F8FF;
+    border-radius: 10px;
 }
 
 @-webkit-keyframes fadein {
@@ -132,7 +134,7 @@ a:active {
 }
 
 #vignette {
-    box-shadow: 0 0 800px #000000 inset;
+    //box-shadow: 0 0 800px #000000 inset;
     z-index: -1;
 }
 
