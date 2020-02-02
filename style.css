@@ -64,26 +64,31 @@ a:active {
     text-transform: none;
     line-height: 1em;
     -webkit-font-smoothing: antialiased;
+    border-radius: 10px;
 }
 
 .icon-twitter:before {
     content: '\f099';
     color: #364156;
+    border-radius: 10px;
 }
 
 .icon-github:before {
     content: '\f09b';
     color: #364156;
+    border-radius: 10px;
 }
 
 .icon-linkedin:before {
     content: '\f0e1';
     color: #364156;
+    border-radius: 10px;
 }
 
 .icon-mail:before {
     content: '\e800';
     color: #364156;
+    border-radius: 10px;
 }
 
 #social > .item {
@@ -95,6 +100,7 @@ a:active {
     overflow: hidden;
     transition-duration: 0.4s;
     transition-property: border-color;
+    border-radius: 10px;
 }
     #social > .item:hover {
         border-color: #F6F8FF;
@@ -107,6 +113,7 @@ a:active {
     width: 280px;
     height: 210px;
     -webkit-transform: rotate(90deg);
+    border-radius: 10px;
 }
 
 #biography {
@@ -115,6 +122,7 @@ a:active {
     padding: 20px;
     background-color: rgb(255, 255, 255, 0.2);
     box-shadow: 0 0 450px #ffffff inset;
+    border-radius: 10px;
 }
 
 @-webkit-keyframes fadein {
