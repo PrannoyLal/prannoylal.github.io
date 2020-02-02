@@ -110,9 +110,8 @@ a:active {
     background: #364156;
     padding: 2px;
     -webkit-animation: fadein 2s;
-    width: 280px;
-    height: 210px;
-    -webkit-transform: rotate(90deg);
+    width: 252px;
+    height: 336px;
     border-radius: 10px;
 }
 
@@ -120,8 +119,7 @@ a:active {
     -webkit-animation: fadein 2s;
     max-width: 450px;
     padding: 20px;
-    background-color: rgb(255, 255, 255, 0.2);
-    box-shadow: 0 0 450px #ffffff inset;
+    background-color: rgb(255, 255, 255, 0.7);
     border-radius: 10px;
 }
 
@@ -140,7 +138,6 @@ a:active {
 }
 
 #vignette {
-    box-shadow: 0 0 800px #000000 inset;
     z-index: -1;
 }
 
