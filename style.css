@@ -102,13 +102,14 @@ a:active {
         border-color: #F6F8FF;
     }
 
+
 #picture img {
     background: #364156;
     padding: 2px;
     -webkit-animation: fadein 2s;
     width: 280px;
     height: 210px;
-    -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(270deg);
     border-radius: 10px;
 }
 
