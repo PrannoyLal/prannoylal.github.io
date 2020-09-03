@@ -6,29 +6,44 @@ html, body {
     height: 100%;
 }
 
+#vantaNet {
+    position: absolute;
+    display: block;
+    min-width: 100%;
+    min-height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 
 body {
     font-family: 'Questrial', sans-serif;
     font-size: 18px;
     background: #F6F8FF;
-    color: #364156;
+    /* color: #364156; */
+    color: #FFFFFF;
 }
 
 a:link {
-    color: #364156;
+    /* color: #364156; */
+    color: #FFFFFF;
 }
 
 a:visited {
-    color: #364156;
+    /* color: #364156; */
+    color: #FFFFFF;
 }
 
 a:hover {
-    color: #5073b8;
+    /* color: #5073b8; */
+    color: gray;
 }
 
 a:active {
-    color: #364156;
+    /* color: #364156; */
+    color: #FFFFFF;
 }
 
 .container {
@@ -67,31 +82,40 @@ a:active {
     -webkit-font-smoothing: antialiased;
 }
 
+.transparent{
+    background:rgba(1,1,1,0.5);
+}
+
 .icon-twitter:before {
     content: '\f099';
-    color: #364156;
+    /* color: #364156; */
+    color: #FFFFFF;
 }
 
 .icon-github:before {
     content: '\f09b';
-    color: #364156;
+    /* color: #364156; */
+    color: #FFFFFF;
 }
 
 .icon-linkedin:before {
     content: '\f0e1';
-    color: #364156;
+    /* color: #364156; */
+    color: #FFFFFF;
 }
 
 .icon-mail:before {
     content: '\e800';
-    color: #364156;
+    /* color: #364156; */
+    color: #FFFFFF;
 }
 
 #social > .item {
     text-align: center;
     -webkit-animation: fadein 2s;
-    background-color: #F6F8FF;
-    border: 2px solid #364156;
+    /* background-color: #F6F8FF; */
+    /* border: 2px solid #364156; */
+    border: 2px solid #FFFFFF;
     padding: 10px;
     overflow: hidden;
     transition-duration: 0.4s;
@@ -99,12 +123,12 @@ a:active {
     border-radius: 10px;
 }
     #social > .item:hover {
-        border-color: #F6F8FF;
+        border-color: gray;
     }
 
 
 #picture img {
-    background: #364156;
+    background: #FFFFFF;
     padding: 2px;
     -webkit-animation: fadein 2s;
     width: 280px;
