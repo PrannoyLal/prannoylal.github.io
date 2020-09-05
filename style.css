@@ -10,19 +10,19 @@ html, body {
     position: absolute;
     display: block;
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;    
 }
 
 
 body {
     font-family: 'Questrial', sans-serif;
     font-size: 18px;
-    background: #F6F8FF;
+    /* background: #F6F8FF; */
     /* color: #364156; */
     color: #FFFFFF;
 }
@@ -39,7 +39,8 @@ a:visited {
 
 a:hover {
     /* color: #5073b8; */
-    color: gray;
+    /* color: gray; */
+    color: #ff3f81;
 }
 
 a:active {
@@ -80,7 +81,7 @@ a:active {
     font-variant: normal;
     text-transform: none;
     line-height: 1em;
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased; */
 }
 
 .transparent{
@@ -113,7 +114,7 @@ a:active {
 
 #social > .item {
     text-align: center;
-    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
     /* background-color: #F6F8FF; */
     /* border: 2px solid #364156; */
     border: 2px solid #FFFFFF;
@@ -124,33 +125,34 @@ a:active {
     border-radius: 10px;
 }
     #social > .item:hover {
-        border-color: gray;
+        /* border-color: gray; */
+        border-color: #ff3f81;
     }
 
 
 #picture img {
     background: #FFFFFF;
     padding: 2px;
-    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
     width: 280px;
     height: 210px;
-    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
     border-radius: 10px;
 }
 
 #biography {
-    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
     max-width: 450px;
     padding: 20px;
     border-radius: 10px;
 }
 
-@-webkit-keyframes fadein {
+/* @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
+} */
 
-#particles, #vignette {
+/* #particles, #vignette {
     position: fixed;
     min-width: 100%;
     min-height: 100%;
@@ -162,7 +164,7 @@ a:active {
 #vignette {
     //box-shadow: 0 0 800px #000000 inset;
     z-index: -1;
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .container {
